@@ -99,8 +99,8 @@ function draw() {
     for (let i = 0; i < pose.keypoints.length; i++) {
       let x = pose.keypoints[i].position.x;
       let y = pose.keypoints[i].position.y;
-      fill(x, y, 255, 255);
-      rect(x, y, 2, 16);
+      fill(153, 204, 255);
+      rect(x, y, 3, 22);
     }
 
     for (let i = 0; i < skeleton.length; i++) {
