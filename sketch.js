@@ -107,8 +107,8 @@ function draw() {
       let a = skeleton[i][0];
       let b = skeleton[i][1];  
       //print(skeleton.length);
-      strokeWeight(1);
-      stroke(y, x, x, 30);
+      strokeWeight(3);
+      stroke(y, x, x);
       line(a.position.x, a.position.y, b.position.x, b.position.y);
     }
 
