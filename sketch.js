@@ -84,9 +84,9 @@ function draw() {
     fill(y, x, x, 40);
     //noStroke();
     
-    // ellipse(pose.nose.x, pose.nose.y, 20, 10);
-    // ellipse(pose.leftEye.x, pose.leftEye.y, 20, 10);
-    // ellipse(pose.rightEye.x, pose.rightEye.y, 20, 10);
+    ellipse(pose.nose.x, pose.nose.y, 40, 30);
+    ellipse(pose.leftEye.x, pose.leftEye.y, 40, 30);
+    ellipse(pose.rightEye.x, pose.rightEye.y, 40, 30);
     // rect(pose.rightWrist.x, pose.rightWrist.y, 1, 9);
     // rect(pose.leftWrist.x, pose.leftWrist.y, 1, 8);
     // rect(pose.leftAnkle.x, pose.leftAnkle.y, 1, 10);
