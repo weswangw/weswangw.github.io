@@ -1,24 +1,4 @@
 var txt;
-function setup(){
-  noCanvas();
-
-  let lang = navigator.language || 'en-US';
-  let speechRec = new p5.SpeechRec(lang, gotSpeech);
-  
-
-  let contiunuous = true;
-  let interim = false;
-  speechRec.start(contiunuous, interim);
-  
-  txt = speechRec.resultString;
-  
-  function gotSpeech(){
-    console.log(speechRec);
-    if(speechRec.resultValue){
-      createP(speechRec.resultString);
-    }
-  }
-}
 
 
 let dataServer;
@@ -89,7 +69,8 @@ function sendTheMessage(){
       channel: channelName,
       message: 
       {
-        txt: txt
+        txt: txt,
+        lst: lst
       }
     }
   )
@@ -101,5 +82,6 @@ function readIncoming(inMessage){
 
       who = inMessage.message.publisher;
       txt = inMessage.message.txt;
+      lst = inMessage.message.lst;
   }  
 }
