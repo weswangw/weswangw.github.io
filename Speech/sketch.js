@@ -35,7 +35,7 @@ function setup() {
   
 
   let contiunuous = true;
-  let interim = false;
+  let interim = true;
   speechRec.start(contiunuous, interim);
   
   txt = speechRec.resultString;
